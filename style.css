@@ -1,0 +1,17 @@
+#body_background{
+    background-image: url("bg1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: aquamarine;
+}
+#Agh_xd{
+    width: 1000px;
+    height: 700px;
+    border-color: teal;
+    border-style: inset;
+    border-width: 100px;
+    background-color: springgreen
+}
