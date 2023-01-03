@@ -28,10 +28,31 @@ function nononono(n){
     A_A= "mouseup"
 }
 var ancho=screen.width
-var nuevo_ancho=screen.width-50
-var alto=screen.height-200
+var nuevo_ancho=screen.width+50
+var alto=screen.height+200
 if(ancho<992){
     t_t.width=nuevo_ancho
     t_t.height=alto
     document.body.style.overflow="hidden"
+}
+
+t_t.addEventListener("touchstart",Ahjahj)
+function Ahjahj(n){
+    A_A= "touch"
+}
+
+t_t.addEventListener("touchmove",JAJA)
+function JAJA(n){
+    mouseY= n.touches[0].clientY-t_t.offsetTop
+    mouseX= n.touches[0].clientX-t_t.offsetLeft
+    if (A_A=="touch"){
+        sino.beginPath()
+        sino.strokeStyle=X_X
+        sino.lineWidth=UwU
+        sino.moveTo(nono,sisi)
+        sino.lineTo(mouseX,mouseY)
+        sino.stroke()
+    }
+    nono=mouseX
+    sisi=mouseY
 }
