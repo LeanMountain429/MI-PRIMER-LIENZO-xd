@@ -1,28 +1,37 @@
-var T_T= document.getElementById("Agh_xd")
-var U_U= T_T.getContext("2d")
+t_t= document.getElementById("Agh_xd")
+var sino= t_t.getContext("2d")
 var X_X= "blue"
 var UwU= 2
 var A_A= "vachio"
-T_T.addEventListener("mousedown",IhateMITappINVENTOR)
-function IhateMITappINVENTOR(ñ){
+var nono,sisi,mouseY,mouseX
+t_t.addEventListener("mousedown",IhateMITappINVENTOR)
+function IhateMITappINVENTOR(n){
     A_A= "mousedown"
 }
-T_T.addEventListener("mousemove",IloveSTUDIOcode)
-function IloveSTUDIOcode(ñ){
-    var Y_Y= ñ.clientY-T_T.offsetTop
-    var OwO= ñ.clientX-T_T.offsetLeft
+t_t.addEventListener("mousemove",IloveSTUDIOcode)
+function IloveSTUDIOcode(n){
+    mouseY= n.clientY-t_t.offsetTop
+    mouseX= n.clientX-t_t.offsetLeft
     if (A_A=="mousedown"){
-        U_U.beginPath()
-        U_U.strokeStyle=X_X
-        U_U.lineWidth=UwU
-        U_U.moveTo(N_N,QwQ)
-        U_U.lineTo(OwO,Y_Y)
-        U_U.stroke()
+        sino.beginPath()
+        sino.strokeStyle=X_X
+        sino.lineWidth=UwU
+        sino.moveTo(nono,sisi)
+        sino.lineTo(mouseX,mouseY)
+        sino.stroke()
     }
-    N_N=OwO
-    QwQ=Y_Y
+    nono=mouseX
+    sisi=mouseY
 }
-T_T.addEventListener("mousedown",IhateMITappINVENTOR)
-function IhateMITappINVENTOR(ñ){
-    A_A= "mousedown"
+t_t.addEventListener("mouseup",nononono)
+function nononono(n){
+    A_A= "mouseup"
+}
+var ancho=screen.width
+var nuevo_ancho=screen.width-50
+var alto=screen.height-200
+if(ancho<992){
+    t_t.width=nuevo_ancho
+    t_t.height=alto
+    document.body.style.overflow="hidden"
 }
